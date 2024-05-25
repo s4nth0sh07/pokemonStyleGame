@@ -1,0 +1,90 @@
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas{
+  
+}
+h1{
+  font-size: 16px;
+}
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+#overlappingDiv{
+  background-color: black;
+  /* relative to parent div */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.attackContainer{
+  display: flex;
+  background-color: white;
+  height: 140px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  border-top: 4px black solid;
+}
+.attacks{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 66.66%;
+}
+button{
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover{
+  background-color: #CCC;
+}
+.attack_type{
+  border-left: 4px black solid;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.health_bar{
+  background-color: white;
+  width: 250px;
+  position: absolute;
+  border: 4px black solid;
+  padding: 12px;
+}
+.hb_top{
+  top: 50px;
+  left: 50px;
+}
+.hb_bottom{
+  top: 330px;
+  right: 50px;
+}
+.dialoguebox{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+  display: none;
+  background-color: white;
+  cursor: pointer;
+}
